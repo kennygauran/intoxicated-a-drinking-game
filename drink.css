@@ -1,0 +1,115 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    height: 100vh;
+    color: #ffffff; /* White text color */
+    background: #000000; /* Black background */
+}
+
+h1 {
+    text-shadow: 0px 3px 0px green; /* White text shadow for better visibility */
+    line-height: 1.2; /* Adjusted for better readability */
+    transform: rotate(-9deg);
+    margin: 20px 0; /* Added margin for spacing */
+    font-size: 24px; /* Responsive font size */
+    color: #ffffff; /* White text color */
+}
+
+#choice-el {
+    width: 90%; /* Adjusted to fit better on small screens */
+    max-width: 600px; /* Maximum width to prevent it from becoming too wide */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px;
+    margin: 0 auto; /* Centered the element */
+    background: #000000; /* Black background for the choice container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2); /* Light shadow for contrast */
+}
+
+#choice-el img {
+    max-width: 100%; /* Make sure image scales to fit the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.title {
+    font-family: 'Arial', sans-serif; /* Different font for title */
+    color: #ffffff; /* White color for title */
+    font-size: 26px; /* Larger font size for title */
+    font-weight: bold;
+    margin-bottom: 30px; /* Space below title */
+}
+
+.choice {
+    font-family: 'Georgia', serif; /* Different font for choice */
+    color: #ffffff; /* White color for choice */
+    font-size: 22px; /* Font size for choice */
+    margin-bottom: 30px; /* Space below choice */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.type {
+    font-family: 'Courier New', monospace; /* Different font for type */
+    font-size: 18px; /* Font size for type */
+    margin-top: 30px; /* Space above type */
+}
+
+.type.GAME {
+    color: #00ff00; /* Green color for game */
+}
+
+.type.DARE {
+    color: #ff0000; /* Red color for dare */
+}
+
+.type.VOTE {
+    color: #0000ff; /* Blue color for vote */
+}
+
+.type.TRUTH {
+    color: #FFD700; /* Gold color for truth */
+}
+
+/* Button Styles */
+button {
+    margin: 10px;
+    cursor: pointer;
+    border: 0;
+    padding: 12px 24px; /* Increased padding for better touch targets */
+    border-radius: 10px;
+    background: #ffffff; /* White background for buttons */
+    color: #000000; /* Black text color for buttons */
+    font-family: inherit;
+    font-size: 18px; /* Responsive font size */
+    transition: background 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background: #f0f0f0; /* Light gray background on hover */
+    color: #000000; /* Black text color on hover */
+}
+
+/* Hide elements initially */
+.hidden {
+    display: none;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 32px; /* Larger font size for larger screens */
+    }
+
+    #choice-el {
+        font-size: 24px; /* Adjusted font size for larger screens */
+    }
+
+    button {
+        font-size: 20px; /* Larger font size for buttons */
+    }
+}
